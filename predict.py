@@ -92,11 +92,21 @@ def main():
         use_cuda = True
     rvector = torch.randn(1, 512, 1, 1)
     loop = 0;
+    v0 = random.sample(range(0, 511), 4)
+    v1 = v0[0]
+    v2 = v0[1]
+    v3 = v0[2]
+    v4 = v0[3]
+    #print(str(v1))
+    #print(str(v2))
+    #print(str(v3))
+    #print(str(v4)) 
+    '''
     v1 = random.randint(0,511)
-    v2 = random.randint(0,511)
+    v2 = random.randint(0,511)    
     v3 = random.randint(0,511)
     v4 = random.randint(0,511)
-        
+    '''    
     print('latent vector: '+ ' (Shape is [1][512])')
         
     while True:
